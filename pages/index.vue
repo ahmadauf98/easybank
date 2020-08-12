@@ -4,7 +4,7 @@
       id="content-1"
       class="p-3 py-5 p-md-5 mx-auto d-flex align-items-center justify-content-center"
     >
-      <div class="row">
+      <div class="row container-md">
         <div
           class="col-12 col-md-6 d-flex d-md-none mb-4 p-0 justify-content-center"
         >
@@ -46,7 +46,7 @@
       id="content-2"
       class="p-3 py-5 p-md-5 mx-auto d-block d-flex align-items-center justify-content-center"
     >
-      <div class="px-md-5">
+      <div class="px-md-5 container-md">
         <div class="row mb-5">
           <div class="col-12 col-md-6">
             <div class="title mb-4">
@@ -77,11 +77,57 @@
               </p>
             </div>
 
-            <div class="sub-title text-grey text-center text-md-left pr-md-4">
+            <div class="sub-title text-grey text-center text-md-left">
               <p class="h5 font-weight-light">
                 {{ item.subtitle }}
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="content-3"
+      class="p-3 py-5 p-md-5 mx-auto d-block d-flex align-items-center justify-content-center"
+    >
+      <div class="px-2 px-md-5 my-4 container-md">
+        <div class="row mb-4">
+          <div class="col-12 col-md-6">
+            <div class="title">
+              <p class="h1 font-weight-normal text-center text-md-left">
+                Latest Articles
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-12 col-md-3 mb-2 mb-md-0"
+            v-for="article in articles"
+            :key="article.title"
+          >
+            <b-card-group deck>
+              <b-card
+                class="card-article mb-2"
+                :img-src="article.img"
+                img-alt="..."
+                img-height="180vh"
+                img-width="auto"
+                img-top
+                tag="article"
+              >
+                <b-card-subtitle class="text-author text-grey">{{
+                  article.subtitle
+                }}</b-card-subtitle>
+                <b-card-title class="h5 font-weight-bolder">{{
+                  article.title
+                }}</b-card-title>
+                <b-card-text class="text-grey">
+                  {{ article.text }}
+                </b-card-text>
+              </b-card>
+            </b-card-group>
           </div>
         </div>
       </div>
@@ -91,6 +137,16 @@
 
 <script>
 export default {
+  head: {
+    title: 'mockup easybank',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Home page description',
+      },
+    ],
+  },
   data() {
     return {
       content: [
@@ -116,7 +172,37 @@ export default {
           icon: 'icon-api.svg',
           title: 'Open API',
           subtitle:
-            'Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier',
+            'Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.',
+        },
+      ],
+      articles: [
+        {
+          img: 'image-currency.jpg',
+          title: 'Receive money in any currency with no fees',
+          subtitle: 'By Claire Robinson',
+          text:
+            "The world is getting smaller and we're becoming more mobile. So why should you be forced to only receive money in a single...",
+        },
+        {
+          img: 'image-restaurant.jpg',
+          title: 'Treat yourself without worrying about money',
+          subtitle: 'By Wilson Hutton',
+          text:
+            'Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you...',
+        },
+        {
+          img: 'image-plane.jpg',
+          title: 'Take your Easybank card wherever you go',
+          subtitle: 'By Wilson Hutton',
+          text:
+            "We want you to enjoy your travels. this is why we don't charge any fees on purchases while you're abroad. We'll even show you...",
+        },
+        {
+          img: 'image-confetti.jpg',
+          title: 'Our invite-only Beta accounts are now live!',
+          subtitle: 'By Claire Robinson',
+          text:
+            "After a lot of hard work by the whole team, we're excited to launch our closed beta. It's easy to request an invite through the site...",
         },
       ],
     }
@@ -125,8 +211,17 @@ export default {
 </script>
 
 <style scoped>
+.card-article {
+  border: none;
+  border-radius: 10px;
+}
+
 .text-grey {
   color: grey;
+}
+
+.text-author {
+  font-size: 14px;
 }
 
 /* Small devices (mobile & Tablet, 992px and below) */
@@ -147,9 +242,13 @@ export default {
     background-color: #f3f4f6;
   }
 
+  #content-3 {
+    min-height: 100vh;
+    background-color: #fafafa;
+  }
+
   .img-mockups {
-    width: 90vw;
-    height: 65vh;
+    width: 350px;
   }
 }
 
@@ -171,6 +270,13 @@ export default {
     padding: 0;
     min-height: 60vh;
     background-color: #f3f4f6;
+  }
+
+  #content-3 {
+    margin: 0;
+    padding: 0;
+    min-height: 60vh;
+    background-color: #fafafa;
   }
 
   .img-mockups {
@@ -200,10 +306,18 @@ export default {
     background-color: #f3f4f6;
   }
 
+  #content-3 {
+    margin: 0;
+    padding: 0;
+    min-height: 70vh;
+    background-color: #fafafa;
+  }
+
   .img-mockups {
     position: absolute;
     left: 5%;
     bottom: -110%;
+    z-index: 0;
   }
 }
 
@@ -225,6 +339,13 @@ export default {
     padding: 0;
     min-height: 75vh;
     background-color: #f3f4f6;
+  }
+
+  #content-3 {
+    margin: 0;
+    padding: 0;
+    min-height: 75vh;
+    background-color: #fafafa;
   }
 
   .img-mockups {
