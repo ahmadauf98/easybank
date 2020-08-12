@@ -138,7 +138,7 @@
 <script>
 export default {
   head: {
-    title: 'mockup easybank',
+    title: 'easybank - mockup',
     meta: [
       {
         hid: 'description',
