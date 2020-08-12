@@ -149,7 +149,7 @@ export default {
 
   .img-mockups {
     width: 90vw;
-    height: auto;
+    height: 95vh;
   }
 }
 
