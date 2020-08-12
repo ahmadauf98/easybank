@@ -129,7 +129,7 @@ export default {
   color: grey;
 }
 
-/* Small devices (mobile, 992px and below) */
+/* Small devices (mobile & Tablet, 992px and below) */
 @media only screen and (max-width: 991px) {
   #content-1 {
     margin: 0;
@@ -149,6 +149,7 @@ export default {
 
   .img-mockups {
     width: 90vw;
+    height: auto;
   }
 }
 
