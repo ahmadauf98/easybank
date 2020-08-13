@@ -8,9 +8,9 @@
         <div
           class="col-12 col-md-6 d-flex d-md-none mb-4 p-0 justify-content-center"
         >
-          <img class="img-mockups" src="~/static/image-mockups.png" alt="..." />
+          <img class="img-mockups" src="~/static/image-mockups.png" alt="..." width="300px" />
         </div>
-        <div class="col-12 col-md-6 px-5">
+        <div class="col-12 col-md-6 px-md-5">
           <div class="title mb-4">
             <p
               class="h1 font-weight-normal text-center text-md-left d-flex d-md-none"
@@ -245,10 +245,6 @@ export default {
   #content-3 {
     min-height: 100vh;
     background-color: #fafafa;
-  }
-
-  .img-mockups {
-    width: 350px;
   }
 }
 
