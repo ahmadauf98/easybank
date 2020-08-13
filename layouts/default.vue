@@ -14,7 +14,7 @@
             <b-nav-item href="#">About</b-nav-item>
             <b-nav-item href="#">Contact</b-nav-item>
             <b-nav-item href="#">Blog</b-nav-item>
-            <b-nav-item href="#">Carrers</b-nav-item>
+            <b-nav-item href="#">Careers</b-nav-item>
           </b-navbar-nav>
 
           <!-- Right aligned nav items -->
