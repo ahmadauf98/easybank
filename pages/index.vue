@@ -8,7 +8,13 @@
         <div
           class="col-12 col-md-6 d-flex d-md-none mb-4 p-0 justify-content-center"
         >
-          <img class="img-mockups" src="~/static/image-mockups.png" alt="..." width="300px" />
+          <img
+            class="img-mockups"
+            src="~/static/image-mockups.png"
+            alt="..."
+            width="300px"
+            height="365px"
+          />
         </div>
         <div class="col-12 col-md-6 px-md-5">
           <div class="title mb-4">
@@ -117,9 +123,9 @@
                 img-top
                 tag="article"
               >
-                <b-card-subtitle class="text-author text-grey">{{
+                <b-card-sub-title class="text-author text-grey">{{
                   article.subtitle
-                }}</b-card-subtitle>
+                }}</b-card-sub-title>
                 <b-card-title class="h5 font-weight-bolder">{{
                   article.title
                 }}</b-card-title>
