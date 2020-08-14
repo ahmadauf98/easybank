@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid p-0">
+  <div class="container-fluid p-0 overflow">
     <div
       id="content-1"
       class="p-3 py-5 p-md-5 mx-auto d-flex align-items-center justify-content-center"
@@ -228,6 +228,10 @@ export default {
 
 .text-author {
   font-size: 14px;
+}
+
+.overflow {
+  overflow-x: hidden;
 }
 
 /* Small devices (mobile & Tablet, 992px and below) */
