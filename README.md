@@ -2,7 +2,7 @@
 
 > Hello frontend developers! I have developed a mockup website (easybank) landing page using vue, nuxt, and bootstrap. Sorry, the code looks a bit messy as I put all codes on one page. Maybe I will separate those codes into component and make it more readable in the future. Shout out to Frontend Mentors!! If you wanna practice developing frontend website, you can check out frontend mentors. They will provide you the design and resources, so you can focus on your frontend development. I put the link in the credit developer below.
 
-## Live mynuxtview Website
+## Live Demo Website
 
 To see live demo, [Click Here](https://easybank-dun.vercel.app/)
 
